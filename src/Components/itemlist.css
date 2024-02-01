@@ -1,0 +1,32 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .imagen-producto {
+    width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #666666;
+    margin: 0;
+  }
