@@ -5,9 +5,9 @@
   padding: 20px;
   margin: 20px auto;
   max-width: auto;
-  display: flex; /* Agrega display: flex para usar flexbox */
-  flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila si no caben */
-  justify-content: center; /* Centra los elementos horizontalmente */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 .titulo {
