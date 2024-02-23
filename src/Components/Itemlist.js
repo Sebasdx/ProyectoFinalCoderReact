@@ -1,29 +1,56 @@
-import React from 'react';
+/* import React from 'react';
 import '../Components/itemlist.css';
-import producto from '../img/Prod.png'; 
-
-const ListaProductos = () => {
+import CatalogoCard from '../Components/CatalogoCard';
+import "../img/Vestido 2.jpg"
+function ListaProductos(){
   return (
     <div className="card">
-      <h1 className="titulo">Lista de Productos</h1>
       <div className="producto">
-        <img src={producto} alt="Producto 1" className="imagen-producto" />
-        <h2>Producto 1: descripcion</h2>
-      </div>
+        <CatalogoCard
+          imageUrl="https://www.rapsodia.com.ar/media/catalog/product/9/5/95705_rapsodia_11115025162i_01_1.jpg?quality=100&fit=bounds&height=900&width=600"
+          description="Vestido Short Zebra"
+          />
       <div className="producto">
-        <img src={producto} alt="Producto 2" className="imagen-producto" />
-        <h2>Producto 2: descripcion</h2>
+          </div>
+        <CatalogoCard
+          imageUrl="https://www.rapsodia.com.ar/media/catalog/product/9/5/95618_rapsodia_11115025223i_01_1.jpg?quality=100&fit=bounds&height=900&width=600"
+          description="Vestido Sakura Japo"
+        />
       </div>
-      <div className="producto">
-        <img src={producto} alt="Producto 3" className="imagen-producto" />
-        <h2>Producto 3: descripcion</h2>
+      <div>
+      <CatalogoCard
+          imageUrl="https://www.rapsodia.com.ar/media/catalog/product/9/4/94523_rapsodia_11115025242c_01_1.jpg?quality=100&fit=bounds&height=1800&width=1200" 
+          description="VESTIDO AMELIE"
+        />
       </div>
-      <div className="producto">
-        <img src={producto} alt="Producto 4" className="imagen-producto" />
-        <h2>Producto 4: descripcion</h2>
-      </div>
+    </div>
+
+  );
+}
+
+export default ListaProductos; 
+ */
+
+import React from 'react';
+import '../Components/itemlist.css';
+import CatalogoCard from '../Components/CatalogoCard.js';
+import vestidosData from '../data/vestidos.json'; 
+
+function ListaProductos(){
+  return (
+    <div className="card">
+      {vestidosData.vestidos.map(vestido => (
+        <div className="producto" key={vestido.id}>
+          <CatalogoCard
+            id={vestido.id} 
+            imageUrl={vestido.imagenUrl}
+            nombres={vestido.nombre}
+          />
+        </div>
+      ))}
     </div>
   );
 }
 
 export default ListaProductos;
+

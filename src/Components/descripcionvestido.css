@@ -1,0 +1,80 @@
+/* .descripcion-vestido-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .descripcion-vestido-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion-vestido-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion-vestido-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 4px 4px rgba(255, 10, 255, 0.397);
+  } */
+
+  .descripcion-vestido-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+  }
+  
+  .descripcion-vestido-container .texto {
+    flex: 1; /* El texto ocupará todo el espacio restante */
+    padding-left: 20px; /* Agrega espacio entre la imagen y el texto */
+  }
+  
+  .descripcion-vestido-container .texto h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion-vestido-container .texto p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion-vestido-container .imagen {
+    flex: 0 0 auto; /* La imagen mantendrá su tamaño original */
+    
+  }
+  
+  .descripcion-vestido-container .imagen img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 4px 4px rgba(255, 10, 255, 0.397);
+  }
+  
+/* carrito */
+.carrito {
+    background-color: #a74caf; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    padding: 15px 32px; /* Relleno generoso */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como elemento en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    border-radius: 8px; /* Bordes redondeados */
+    transition-duration: 0.4s; /* Duración de la transición */
+  }
+  
+  .carrito:hover {
+    background-color: #d62fac; /* Cambia el color de fondo al pasar el ratón */
+    color: white; /* Texto blanco */
+  }

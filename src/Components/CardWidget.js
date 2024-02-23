@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './cardwidget.css';
 
-const CardWidget = ({ number }) => {
+function CardWidget({ number }) {
   return (
-    <div className="card-widget">
-      <span className="number">{number}</span>
-    </div>
+    <Link to="/carrito" className="card-widget-link">
+      <div className="card-widget">
+        <span className="number">{number}</span>
+      </div>
+    </Link>
   );
 }
 
