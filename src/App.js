@@ -1,27 +1,28 @@
-// App.js
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Catalogo from './Pages/catalogo';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { CartProvider } from './Context/CartContext';
 import Home from './Pages/Home';
-import Nosotros from './Pages/nosotros';
-import Carrito from './Pages/carrito';
-import Contacto from './Pages/contacto';
+import Carrito from './Pages/carrito'; 
 import Descripcion from './Pages/Descripcion';
+import Checkout from './Pages/Checkout';
+import Contacto from './Pages/Contacto'; 
+import ErrorPage from './Pages/ErrorPage';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/catalogo" element={<Catalogo />} />
-        <Route path="/nosotros" element={<Nosotros />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/carrito" element={<Carrito />} />
-        <Route path="/catalogo/vestido/:id" element={<Descripcion/>} />
-      </Routes>
-    </BrowserRouter>
+    <CartProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/carrito" element={<Carrito />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/catalogo/vestido/:id" element={<Descripcion />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/error" element={<ErrorPage />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 
 export default App;
-

@@ -1,0 +1,47 @@
+/* catalogocardcontainer.css */
+
+.card{
+  display:ruby-text;
+  background-color: #ecececf5;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px 5px 20px;
+  border-radius: 10px;
+}
+
+.producto {
+  display: inline-flex;
+}
+.catalog-card-container {
+  width: 300px;
+  height: 600px;
+  background-color: #f2f2f293;
+  margin-left: 20px; /* Agrega un espacio entre las columnas */
+  margin-bottom: 20px; /* Agrega un espacio entre las filas */
+  margin-top: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card-container:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento en la fila */
+}
+
+.catalog-card-image {
+  width: 100%;
+}
+
+.catalog-card-description {
+  padding: 10px;
+}
+
+.catalog-card-button {
+  display: block;
+  text-align: center;
+  background-color: #db0f97e5;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.catalog-card-button:hover {
+  background-color: #da0bc9;
+}

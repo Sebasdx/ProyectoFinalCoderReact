@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from '../Components/Navbar.js';
-import TodosVestidos from '../Components/TodosVestidos.js';
+import Checkout from "../Components/Checkout.js";
 
-function Home() {
+function Check() {
   return (
     <div>
       <Navbar/>
-      <TodosVestidos/>
+      <Checkout/>
     </div>
   );
 }
 
-export default Home;
+export default Check;

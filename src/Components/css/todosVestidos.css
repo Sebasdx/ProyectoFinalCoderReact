@@ -1,0 +1,20 @@
+.filtro-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filtro-buttons button {
+    padding: 8px 16px;
+    margin: 0 10px;
+    background-color: #f7d9e5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filtro-buttons button:hover {
+    background-color: #ffadda;
+  }
+  

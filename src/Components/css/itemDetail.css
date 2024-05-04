@@ -1,0 +1,61 @@
+  .descripcion-vestido-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+.descripcion-cargando{
+  color: #d62fac;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.descripcion-vestido-container .texto {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.descripcion-vestido-container .texto h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.descripcion-vestido-container .texto p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.descripcion-vestido-container .carrito {
+    background-color: #a74caf;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; /* Añadido margen superior */
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.descripcion-vestido-container .carrito:hover {
+    background-color: #d62fac;
+}
+
+.descripcion-vestido-container .imagen {
+    flex: 0 0 auto;
+}
+
+.descripcion-vestido-container .imagen img {
+    max-width: 600px; /* Redimensiona el ancho máximo de la imagen */
+    height: auto;
+    max-height: 900px; /* Añadido: ajusta el alto máximo de la imagen */
+    width: 100%; /* Añadido: asegura que la imagen ocupe todo el ancho disponible */
+    box-shadow: 0px 0px 4px 4px rgba(255, 10, 255, 0.397);
+}

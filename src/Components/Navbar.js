@@ -1,9 +1,10 @@
 import React from 'react';
-import './navbar.css';
+import './css/navbar.css';
 import logo from '../img/logo maniqui.jpg'; 
-import CardWidget from './CardWidget.js';
+import CartWidget from './CartWidget.js';
+import { Link } from 'react-router-dom';
 
-function Navbar(){
+function Navbar() {
   return (
     <nav className="barra-navegacion">
       <div className="logo-container">
@@ -11,11 +12,9 @@ function Navbar(){
         <h2 className='nombre-tienda'>Tienda de Vestidos</h2> 
       </div>
       <ul className="lista-navegacion">
-        <li className="item-lista"><a className="enlace" href="/">Inicio</a></li>
-        <li className="item-lista"><a className="enlace" href="/catalogo">Catalogo</a></li>
-        <li className="item-lista"><a className="enlace" href="/nosotros">Nosotros</a></li>
-        <li className="item-lista"><a className="enlace" href="/contacto">Contacto</a></li>
-        <CardWidget number={5} />
+        <li className="item-lista"><Link to="/">Inicio</Link></li>
+        <li className="item-lista"><Link to="/contacto">Contacto</Link></li>
+        <CartWidget/>
       </ul>
     </nav>
   );
